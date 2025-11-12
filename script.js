@@ -3,7 +3,7 @@ async function chamarAPI() {
   saida.innerHTML = "⏳ O gatinho está miando para o servidor...";
 
   try {
-    const resposta = await fetch("https://projeto-ci-cd-back-6w47.onrender.com/");
+    const resposta = await fetch("https://projeto-ci-cd-back-hoah.onrender.com/");
     const dados = await resposta.json();
     saida.innerHTML = `🐱💬 <em>${dados.mensagem}</em>`;
   } catch (erro) {
